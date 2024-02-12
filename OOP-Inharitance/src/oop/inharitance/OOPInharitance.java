@@ -15,8 +15,8 @@ public class OOPInharitance {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
-        Hewan hewan = new Hewan();
         Scanner scan = new Scanner(System.in);
         int a;
         boolean valid = true;
@@ -31,13 +31,19 @@ public class OOPInharitance {
 
             switch (a) {
                 case 1:
-                    System.out.println(hewan.kucing);
+                    Kucing kucing = new Kucing("Kucing", "Meow meow", 4);
+                    kucing.info();
+                    kucing.infoKucing();
                     break;
                 case 2:
-                    System.out.println(hewan.anjing);
+                    Anjing anjing = new Anjing("Anjing", "Guk guk guk", 4);
+                    anjing.info();
+                    anjing.infoAnjing();
                     break;
                 case 3:
-                    System.out.println(hewan.sapi);
+                    Sapi sapi = new Sapi("Sapi", "Mooo mooo", 4);
+                    sapi.info();
+                    sapi.infoSapi();
                     break;
                 case 4:
                     System.out.println("Terima kasih");

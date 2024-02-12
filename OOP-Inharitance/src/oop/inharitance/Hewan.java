@@ -10,7 +10,16 @@ package oop.inharitance;
  */
 public class Hewan {
     
-    String kucing = "\nMeong meong meong";
-    String anjing = "\nGuk guk guk";
-    String sapi = "\nMooo mooo mooo";
+    String jenis;
+    String suara;
+    
+    Hewan(String jenis, String suara) {
+        this.jenis = jenis;
+        this.suara = suara;
+    }
+    
+    void info() {
+        System.out.println("\nJenis hewan : " + jenis);
+        System.out.println("Suara       : " + suara);
+    }
 }
